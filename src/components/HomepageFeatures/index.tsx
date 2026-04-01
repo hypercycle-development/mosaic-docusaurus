@@ -11,32 +11,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'User-Centered Tutorials',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Follow practical, end-user guides for AI Chat, Vault, Tool Sandbox,
+        Gmail, MCP, Chat Rooms, Mosaic Bot, and Web3 workflows.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Mosaic References',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Keep product documentation and external references in one place for
+        faster onboarding and day-to-day execution.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Built for Daily Use',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Navigate quickly between docs and guides, and keep a shared source of
+        truth for your team’s Mosaic workflows.
       </>
     ),
   },

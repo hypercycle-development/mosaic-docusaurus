@@ -5,7 +5,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 const config: Config = {
   title: "Mosaic Docs",
-  tagline: "Dinosaurs are cool",
+  tagline: "Guides and references for Mosaic",
   favicon: "img/favicon.ico",
   trailingSlash: false, // Recommended for GitHub Pages
 
@@ -41,10 +41,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/hypercycle-development/mosaic-docusaurus/tree/main/",
         },
         blog: {
           showReadingTime: true,
@@ -52,10 +50,8 @@ const config: Config = {
             type: ["rss", "atom"],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/hypercycle-development/mosaic-docusaurus/tree/main/",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -75,9 +71,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: "My Site",
+      title: "Mosaic Docs",
       logo: {
-        alt: "My Site Logo",
+        alt: "Mosaic Docs Logo",
         src: "img/logo.svg",
       },
       items: [
@@ -85,11 +81,16 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Docs",
+        },
+        {
+          to: "/docs/guides/start-here",
+          position: "left",
+          label: "Guides",
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/hypercycle-development/mosaic-docusaurus",
           label: "GitHub",
           position: "right",
         },
@@ -102,25 +103,25 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "Tutorial",
+              label: "Docs Home",
               to: "/docs/intro",
+            },
+            {
+              label: "Mosaic Guides",
+              to: "/docs/guides/start-here",
             },
           ],
         },
         {
-          title: "Community",
+          title: "References",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "Mosaic Guides Repository",
+              href: "https://github.com/hypercycle-development/mosaic-guides",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "X",
-              href: "https://x.com/docusaurus",
+              label: "Mosaic Docs Repository",
+              href: "https://github.com/hypercycle-development/mosaic-docusaurus",
             },
           ],
         },
@@ -133,12 +134,12 @@ const config: Config = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/hypercycle-development/mosaic-docusaurus",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} HyperCycle. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

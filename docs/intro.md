@@ -2,46 +2,35 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Mosaic Docs
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to the central documentation hub for Mosaic.
 
-## Getting Started
+## What you’ll find here
 
-Get started by **creating a new site**.
+- Product documentation and references in `docs/`
+- End-user tutorials in `docs/guides/`
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Start with tutorials
 
-### What you'll need
+If you are new to Mosaic, begin with:
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- [Start Here: Your First 10 Minutes](/docs/guides/start-here)
+- [AI Chat: Ask Better Questions and Get Better Answers](/docs/guides/ai-chat)
 
-## Generate a new site
+## Core references
 
-Generate a new Docusaurus site using the **classic template**.
+- Configuration: `docusaurus.config.ts`
+- Navigation sidebar: `sidebars.ts`
+- Homepage content: `src/pages/index.tsx`
 
-The classic template will automatically be added to your project after you run the command:
+## Local development
 
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
+Install dependencies and run the site locally:
 
 ```bash
-cd my-website
+npm install
 npm run start
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Then open [http://localhost:3000](http://localhost:3000).
